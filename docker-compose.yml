@@ -4,7 +4,11 @@ services:
     build: .
     volumes:
      - .:/code
-    depends_on:
+    links:
      - redis
   redis:
-    image: redis
+    image: redis:3.0
+    ports:
+         - "6379:6379"
+    
+
