@@ -1,6 +1,6 @@
 version: '2'
 services:
-  ninam/etilizepak:
+  app:
     build: .
     volumes:
      - .:/code
