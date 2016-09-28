@@ -1,0 +1,10 @@
+version: '2'
+services:
+  ninam/etilizepak:
+    build: .
+    volumes:
+     - .:/code
+    depends_on:
+     - redis
+  redis:
+    image: redis
