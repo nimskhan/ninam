@@ -2,7 +2,7 @@ FROM ubuntu:14.04
 MAINTAINER Nimra Inam <ninam@etilizepak.com>
 
 # Make sure the package repository is up to date.
-RUN apt-get Clean
+RUN apt-get clean
 RUN apt-get update
 RUN apt-get -y upgrade
 RUN apt-get install -y git
